@@ -14,7 +14,6 @@ function App() {
                 addList
             ]
         });
-        console.log(note);
     };
 
     function delNote(id) {

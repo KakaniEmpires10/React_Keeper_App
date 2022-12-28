@@ -10,6 +10,7 @@ html {
 
 body {
     background: #eee;
+    background-image: url("https://www.transparenttextures.com/patterns/black-thread-light.png");
     padding: 0 16px;
 }
 
@@ -32,6 +33,7 @@ footer {
     bottom: 0;
     width: 100%;
     height: 2.5rem;
+    margin: auto -16px;
 }
 
 footer p {
@@ -66,14 +68,21 @@ footer p {
     margin-right: 10px;
     color: #f5ba13;
     border: none;
-    width: 38px;
-    height: 38px;
-    border-radius: 50%;
+    width: 36px;
+    height: 36px;
     cursor: pointer;
     outline: none;
+    background-color: transparent;
+    font-size: large;
+    transition: 0.5s;
 }
 
-form {
+.note button:hover{
+    background-color: #ccc;
+    border-radius: 50%;
+}
+
+form.create-note {
     position: relative;
     width: 480px;
     margin: 30px auto 20px auto;
@@ -83,8 +92,8 @@ form {
     box-shadow: 0 1px 5px rgb(138, 137, 137);
 }
 
-form input,
-form textarea {
+form.create-note input,
+form.create-note textarea {
     width: 100%;
     border: none;
     padding: 4px;
@@ -94,7 +103,7 @@ form textarea {
     resize: none;
 }
 
-form button {
+form.create-note button {
     position: absolute;
     right: 18px;
     bottom: -18px;
